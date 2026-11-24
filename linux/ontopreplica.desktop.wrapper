@@ -1,0 +1,6 @@
+#!/bin/bash
+# OnTopReplica launcher wrapper
+# This script properly initializes the app with display support
+
+cd /home/k0/OnTopReplica/linux
+exec /usr/bin/python3 -m ontopreplica
