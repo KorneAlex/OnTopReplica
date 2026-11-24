@@ -57,10 +57,14 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.set_child(self._stack)
 
+        # Set window background color directly via CSS
         css = Gtk.CssProvider()
         css.load_from_data(
             b"""
-            window { background: #000000; }
+            window {
+                background: #000000;
+                opacity: 1.0;
+            }
             .hint-label {
                 color: #cccccc;
                 font-size: 14px;
